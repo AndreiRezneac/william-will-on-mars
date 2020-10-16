@@ -19,4 +19,7 @@ interface EarthTime
     const MINUTES_PER_DAY = self::HOURS_PER_DAY * self::MINUTES_PER_HOUR;
     const SECONDS_PER_DAY = self::MINUTES_PER_DAY * self::SECONDS_PER_MINUTE;
     const MILLISECONDS_PER_DAY = self::SECONDS_PER_DAY * self::MILLISECONDS_PER_SECOND;
+
+    // Universal Coordinated Time
+    const UTC = 'UTC';
 }
