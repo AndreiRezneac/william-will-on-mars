@@ -1,12 +1,15 @@
 <?php
 
 
-namespace App\Logic\Earth;
+namespace App\Logic\Earth\CalculationSteps;
 
+
+use App\Logic\Earth\EarthTime;
+use App\Logic\Earth\EarthTimeCalculator;
 
 // UTC : https://en.wikipedia.org/wiki/Coordinated_Universal_Time
 // aka JD(utc)
-class JulianUtcTimeCalculator implements EarthTime, EarthTimeCalculator
+class GregorianUtcToJulianUtcTimeCalculator implements EarthTime, EarthTimeCalculator
 {
     public function calculate(float $gregorianUtcTimeWithMilliseconds): float
     {

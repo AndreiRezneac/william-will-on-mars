@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Logic\Earth;
+namespace App\Logic\Earth\CalculationSteps;
 
 // https://en.wikipedia.org/wiki/Terrestrial_Time
 interface TerrestrialTimeUtcAdjustmentProvider

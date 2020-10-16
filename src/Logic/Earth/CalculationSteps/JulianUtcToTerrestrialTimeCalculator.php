@@ -1,10 +1,13 @@
 <?php
 
 
-namespace App\Logic\Earth;
+namespace App\Logic\Earth\CalculationSteps;
+
+use App\Logic\Earth\EarthTime;
+use App\Logic\Earth\EarthTimeCalculator;
 
 // aka JD(tt)
-class JulianTerrestrialTimeCalculator implements EarthTimeCalculator
+class JulianUtcToTerrestrialTimeCalculator implements EarthTimeCalculator
 {
     /**
      * @var TerrestrialTimeUtcAdjustmentProvider

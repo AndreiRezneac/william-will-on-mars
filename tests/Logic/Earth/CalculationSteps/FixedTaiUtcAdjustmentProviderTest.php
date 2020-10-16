@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Tests\Logic\Earth;
+namespace App\Tests\Logic\Earth\CalculationSteps;
 
-use App\Logic\Earth\FixedTaiUtcAdjustmentProvider;
+use App\Logic\Earth\CalculationSteps\FixedTaiUtcAdjustmentProvider;
 use PHPUnit\Framework\TestCase;
 
 class FixedTaiUtcAdjustmentProviderTest extends TestCase

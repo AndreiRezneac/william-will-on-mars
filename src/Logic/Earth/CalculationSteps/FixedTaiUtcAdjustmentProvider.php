@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Logic\Earth;
+namespace App\Logic\Earth\CalculationSteps;
 
 class FixedTaiUtcAdjustmentProvider implements TerrestrialTimeUtcAdjustmentProvider
 {
