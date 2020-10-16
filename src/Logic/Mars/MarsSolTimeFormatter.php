@@ -10,7 +10,7 @@ class MarsSolTimeFormatter implements DateTimeFormatter, EarthTime
 {
     private const EARTH_TIME_LIKE = '%d:%d:%d.%d';
 
-    public function format(float $marsSolTime, string $format = self::EARTH_TIME_LIKE)
+    public function format(float $marsSolTime, ?string $format = self::EARTH_TIME_LIKE): string
     {
         $hours = floor($marsSolTime * self::HOURS_PER_DAY);
         $minutes = floor($marsSolTime * self::MINUTES_PER_DAY) % self::MINUTES_PER_HOUR;
