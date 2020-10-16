@@ -29,3 +29,16 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Logic\Earth\TerrestrialTimeCalculator:
+        arguments:
+            $gregorianUtcToJulianUtcTimeCalculator: '@App\Logic\Earth\CalculationSteps\GregorianUtcToJulianUtcTimeCalculator'
+            $julianUtcToTerrestrialTimeCalculator: '@App\Logic\Earth\CalculationSteps\JulianUtcToTerrestrialTimeCalculator'
+
+    App\Logic\EarthMarsDateTimesCalculator:
+        arguments:
+            $terrestrialTimeCalculator: '@App\Logic\Earth\TerrestrialTimeCalculator'
+            $marsCoordinatedTimeCalculator: '@App\Logic\Mars\MarsCoordinatedTimeCalculator'
+            $marsSolTimeCalculator: '@App\Logic\Mars\MarsSolTimeCalculator'
+            $marsSolTimeFormatter: '@App\Logic\Mars\MarsSolTimeFormatter'
+
