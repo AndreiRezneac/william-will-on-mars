@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Tests\Logic;
+namespace App\Tests\Logic\DTO;
 
-use App\Logic\EarthMarsDateTime;
+use App\Logic\DTO\UtcMtcMsdDateTimes;
 use PHPUnit\Framework\TestCase;
 
-class EarthMarsDateTimeTest extends TestCase
+class UtcMtcMsdDateTimesTest extends TestCase
 {
 
     public function test__toString()
     {
-        $dateTime = new EarthMarsDateTime('utc date time', 'mtc date time', 'msd time');
+        $dateTime = new UtcMtcMsdDateTimes('utc date time', 'mtc date time', 'msd time');
 
         $this->assertSame(
             '{"UTC":"utc date time","MTC":"mtc date time","MSD":"msd time"}',

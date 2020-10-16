@@ -1,25 +1,28 @@
 <?php
 
 
-namespace App\Logic;
+namespace App\Logic\DTO;
 
 
 use App\Logic\Earth\EarthTime;
 use App\Logic\Mars\MarsTime;
 
-class EarthMarsDateTime
+class UtcMtcMsdDateTimes implements DateTimes
 {
     /**
+     * (Earth) Gregorian UTC
      * @var string
      */
     private $utc;
 
     /**
+     * (Mars) MTC
      * @var string
      */
     private $mtc;
 
     /**
+     * (Mars) MSD
      * @var string
      */
     private $msd;
